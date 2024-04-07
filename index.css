@@ -1,0 +1,139 @@
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  --border: 1px solid rgb(51, 46, 46);
+}
+
+
+body, table, input, button{
+  font: 300 16px/140% 'Roboto';
+}
+
+body{
+  background-color: black;
+  color: aliceblue;
+}
+
+.container{
+  max-width: 690px;
+  margin: 0 auto;
+  padding: 20px 32px;
+
+}
+
+form{
+  border: var(--border);
+  border-inline: none;
+  padding: 20px 0;
+}
+
+fieldset{
+  border: none;
+}
+
+fieldset >div{
+  display: flex;
+  gap: 12px;
+}
+
+.input-wrapper{
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  border: var(--border);
+  border-radius: 10px;
+  padding: 8px 12px;
+  font: 400 14px/150% 'Roboto';
+  color: rgb(131, 110, 150);
+}
+
+input{
+  all: unset;
+}
+
+fieldset legend, section h2{
+  font: 700 16px/140% 'Roboto', sans-serif;
+  color: azure;
+  padding: 6px;
+}
+
+fieldset button:hover{
+  background: orangered;
+  cursor: pointer;
+  padding-left: 16px;
+}
+
+fieldset button{
+  width: fit-content;
+  border: 0;
+  background: rgb(255, 119, 0);
+  border-radius: 10px;
+  padding: 7px 20px;
+  font: 700 12px/24px 'Roboto', sans-serif;
+}
+
+
+header{
+  padding: 20px 0;
+
+}
+
+.lista-participantes > div{
+  border: var(--border);
+  border-radius: 10px;
+
+}
+
+table{
+  border-collapse: collapse;
+}
+
+table thead{
+  font-size: 14px;
+  line-height: 16px;
+}
+
+thead th,
+tbody td{
+  padding: 12px 15px;
+}
+
+tbody td{
+  border-top: var(--border);
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 100;
+  color: aliceblue;
+
+}
+
+tbody td strong{
+  color: white;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 600;
+}
+
+tbody td small{
+  font-size: 12px;
+  line-height: 16px;
+}
+tbody td button{
+  all:unset;
+  color: lime;
+  cursor: pointer;
+
+}
+
+tbody td button:hover{
+  text-decoration: underline;
+}
+
+form legend{
+  font-size: 15px;
+}
